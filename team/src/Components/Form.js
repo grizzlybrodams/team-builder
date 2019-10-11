@@ -26,7 +26,7 @@ const Form = props => {
       <label htmlFor="title">Name</label>
       <input
         id="title"
-        value={note.title}
+        defaultValue={note.title}
         type="text"
         name="title"
         onChange={handleChange}

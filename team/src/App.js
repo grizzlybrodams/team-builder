@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Form from "./Components/Form";
-
+import Note from "./Components/Notes"
 function App() {
   const [notes, setNotes] = useState([
     {
@@ -25,6 +25,7 @@ function App() {
     <div className="App">
       <h1> Welcome Team</h1>
       <Form addNoteFn={addMember} />
+      <Note notesList={notes} />
     </div>
   );
 }
