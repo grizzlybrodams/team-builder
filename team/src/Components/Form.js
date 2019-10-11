@@ -36,7 +36,7 @@ const Form = props => {
       <label htmlFor="email">E-mail</label>
       <input
         id="email"
-        value={note.email}
+        defaultValue={note.email}
         type="text"
         name="email"
         onChange={handleChange}
@@ -46,7 +46,7 @@ const Form = props => {
       <input
         id="role"
         value={note.role}
-        type="text"
+        defaultValue="text"
         name="role"
         onChange={handleChange}
       />
